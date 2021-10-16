@@ -1,16 +1,20 @@
-# This is a sample Python script.
+import sys
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+input = sys.stdin.readline
 
+n = int(input())
+n_arr = list(map(int, input().split()))
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+m = int(input())
+m_arr = list(map(int, input().split()))
 
+res = []
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+for i in range(n):
+    if m_arr[i] in n_arr:
+        res.append(1)
+    else:
+        res.append(0)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+for i in range(len(res)):
+    print(res[i])

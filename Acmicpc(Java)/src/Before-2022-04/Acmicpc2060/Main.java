@@ -39,10 +39,18 @@ public class Main {
             //제일 앞의 원소 지우고, 변수에 담기
             int x = queue.poll();
 
+            //그래프 길이만큼 반복
             for (int i = 1; i < graph.length; i++) {
+                //지운 원소의 인덱스를 행, 그에 인접한 모든 원소를 열로 잡고 반복하며, 방문하지 않은 것일때
                 if (graph[x][i] == 1 && visited[i] != 1) {
+
+                    //큐에 해당하는 열을 집어넣는다.
                     queue.offer(i);
+
+                    // 해당하는 열을 방문처리한다.
                     visited[i] = 1;
+
+                    //CNT ++1
                     cnt ++;
                 }
             }

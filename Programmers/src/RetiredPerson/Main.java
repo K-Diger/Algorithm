@@ -33,42 +33,50 @@ package RetiredPerson;
 //        예제 #3
 //        "mislav"는 참여자 명단에는 두 명이 있지만, 완주자 명단에는 한 명밖에 없기 때문에 한명은 완주하지 못했습니다.
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 class Solution {
     public String solution(String[] participant, String[] completion) {
 
-        HashMap<String, Integer> completionHash = new HashMap<>();
-        List<String> answer = new ArrayList<>();
-        String stAnswer = "";
+        HashMap<String, Integer> participantHash = new HashMap<>();
 
-
-        for (String item : completion) {
-            completionHash.put(item, 1);
-        }
-
-        // 참가자 명단 해시맵에는 있지만
-        // 완주한 명단 해시맵에는 없으면
-
+        String answer = "";
 
         for (String item : participant) {
-            if (!completionHash.containsKey(item)) {
-                answer.add(item);
-                return item;
+            if (participantHash.containsKey(item)) {
+                participantHash.put(item, participantHash.get(item) + 1);
+            } else {
+                participantHash.put(item, 1);
             }
         }
 
-        return stAnswer;
+        for (String item : completion) {
+            if (participantHash.containsKey(item)) {
+                participantHash.put(item, participantHash.get(item) - 1);
+            }
+        }
+
+        for (String item : participantHash.keySet()) {
+            if (participantHash.get(item) != 0) {
+                answer = item;
+            }
+        }
+        return answer;
+
     }
 }
 
 
 public class Main {
     public static void main(String[] args) {
-        String [] part = {"leo", "kiki", "eden"};
-        String [] com = {"kiki", "eden"};
+        String [] part = {"mislav", "stanko", "mislav", "ana", "mislav"};
+        String [] com = {"stanko", "ana", "mislav"};
+
+//        String [] part = {"marina", "josipa", "nikola", "vinko", "filipa"};
+//        String [] com = {"josipa", "filipa", "marina", "nikola"};
+
+//        String [] part = {"leo", "kiki", "eden"};
+//        String [] com = {"eden", "kiki"};
 
         Solution s = new Solution();
 

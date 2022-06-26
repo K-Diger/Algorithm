@@ -1,14 +1,113 @@
-n = int(input()) # 상근이가 가지고 있는 카드 갯수
-deck_nums = list(map(int, input().split())) # 상근이가 가지고 있는 카드에 적힌 수
+# import sys
+#
+# from collections import deque
+#
+# input = sys.stdin.readline
+#
+# # --------------------------------------------------
+#
+# n = int(input())
+# sang_geun = deque(map(int, input().split()))
+#
+# m = int(input())
+# target = deque(map(int, input().split()))
+#
+# # --------------------------------------------------
+#
+# answer = deque()
+#
+# for i in range(m):
+#     answer.append(sang_geun.count(target[i]))
+#
+# for item in answer:
+#     print(item, end=" ")
+#
+# # --------------------------------------------------
+#
+# answer = deque(0 for i in range(m))
+#
+# for i in range(n):
+#     for j in range(m):
+#         if sang_geun[i] == target[j]:
+#             answer[j] += 1
+#
+# for item in answer:
+#     print(item, end=" ")
+#
+# # --------------------------------------------------
 
-m = int(input()) # 타겟 카드 갯수를 정하기
-target_nums = list(map(int, input().split())) # 이 타겟 수에 대해서 상근이가 몇개를 가지고 있을까?
+# import sys
+#
+# input = sys.stdin.readline
+#
+# n = int(input())
+# sang_geun = list(map(int, input().split()))
+#
+# m = int(input())
+# target = list(map(int, input().split()))
+#
+# correct = {item: 0 for item in sang_geun}
+#
+# for item in sang_geun:
+#     if item in target:
+#         # correct[item] = correct[item] + 1
+#         correct[item] = correct.get(item) + 1
+#
+# for item in correct:
+#     print(item, end=" ")
+
+import sys
+
+input = sys.stdin.readline
+
+n = int(input())
+sang_geun = list(map(int, input().split()))
+
+m = int(input())
+target = list(map(int, input().split()))
+
+correct = {item: 0 for item in sang_geun}
+
+for item in sang_geun:
+    if item in correct:
+        correct[item] += 1
+
+for item in target:
+    if item in correct:
+        print(correct[item], end=" ")
+    else:
+        print(0, end=" ")
+
+# print()
+# print(correct)
+#
+# for item in correct:
+#     if item in target:
+#         # print(correct[item], end=" ")
+#         print("item = ", item)
+#         print(correct[item])
+#     else:
+#         print(0, end=" ")
 
 
-cnt = [int(0)] * 500000
-
-for i in range(n):
-    cnt[deck_nums[i]] += 1
-
-for j in range(len(target_nums)):
-    print(deck_nums.count(target_nums[j]), end=" ")
+# import sys
+#
+# input = sys.stdin.readline
+#
+# n = int(input())
+# sang_geun = list(map(int, input().split()))
+#
+# m = int(input())
+# target = list(map(int, input().split()))
+#
+# correct = {item: 0 for item in sang_geun}
+#
+# for item in sang_geun:
+#     if item in correct:
+#         correct[item] += 1
+#
+# for item in correct:
+#     if item in target:
+#         print(correct[item], end=" ")
+#     else:
+#         print(0, end=" ")

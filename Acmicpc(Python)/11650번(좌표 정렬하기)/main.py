@@ -12,8 +12,8 @@
 # for i in range(n):
 #     sum.append(arr[i])
 #
-# arr.sort() # 두 수의 입력을 담은 배열을 정렬
-# sum.sort() # 두 수의 합을 오름차순으로 정렬
+# arr.sort() # 두 수의 입력을 담은 배열을 Sort
+# sum.sort() # 두 수의 합을 오름차순으로 Sort
 #
 # for i in range(n-1):
 #     if sum[i] == sum[i+1]: # 두수의 합이 같고

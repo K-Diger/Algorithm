@@ -1,4 +1,4 @@
-package Camouflage;
+package other.Camouflage;
 
 //문제 설명
 //

@@ -1,4 +1,4 @@
-package Level1.같은숫자는싫어;
+package Level1.같은숫자는싫어220827;
 
 
 import java.util.ArrayList;

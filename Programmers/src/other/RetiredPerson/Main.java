@@ -1,4 +1,4 @@
-package RetiredPerson;
+package other.RetiredPerson;
 
 
 //문제 설명

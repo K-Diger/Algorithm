@@ -1,4 +1,4 @@
-package InternShip.p1;
+package other.InternShip.p1;
 
 import java.util.Arrays;
 

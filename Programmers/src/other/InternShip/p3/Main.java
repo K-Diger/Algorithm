@@ -1,6 +1,4 @@
-package InternShip.p3;
-
-import java.util.Arrays;
+package other.InternShip.p3;
 
 class Solution {
     public int[] solution(int n, String[] plans, String[] clients) {

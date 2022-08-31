@@ -1,4 +1,4 @@
-package Level1.성격유형검사하기;
+package Level1.성격유형검사하기220826;
 
 // ["AN", "CF", "MJ", "RT", "NA"] 	[5, 3, 2, 7, 5] 	"TCMA"
 // ["TR", "RT", "TR"] 	[7, 1, 3] 	"RCJA"

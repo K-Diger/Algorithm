@@ -1,4 +1,4 @@
-package Level1.나머지1이되는수찾기;
+package Level1.나머지가1이되는수찾기220904;
 
 public class Main {
 

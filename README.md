@@ -1,13 +1,13 @@
 ## 백준 문제풀이 (JAVA)
-https://github.com/diger-king/Algorithm/tree/main/Acmicpc(Java)/src
+[JAVA-Backjoon](https://github.com/K-Diger/Algorithm/tree/main/Acmicpc(Java)/src)
 
 ## 프로그래머스 문제풀이 (JAVA)
-https://github.com/diger-king/Algorithm/tree/main/Programmers/src
+[JAVA-Programmers](https://github.com/K-Diger/Algorithm/tree/main/Programmers(Java)/src)
 
 ---
 
 ## 백준 문제풀이 (Python)
-https://github.com/diger-king/Algorithm/tree/main/Acmicpc(Python)
+[PYTHON-Backjoon](https://github.com/K-Diger/Algorithm/tree/main/Programmers(Python))
 
 ## 프로그래머스 문제풀이 (Python)
-https://github.com/diger-king/Algorithm/tree/main/Programmers(Python)
+[PYTONH-Programmers](https://github.com/K-Diger/Algorithm/tree/main/Programmers(Python))

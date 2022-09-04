@@ -1,4 +1,4 @@
-package 수리공항승1449;
+package Greedy.수리공항승1449;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -28,7 +28,7 @@ public class Main {
             double coverRangeMax = flood.get(i) + 0.5;
 
         }
-
+        return 1;
     }
 }
 

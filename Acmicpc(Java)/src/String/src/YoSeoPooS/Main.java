@@ -1,4 +1,4 @@
-package YoSeoPooS;
+package String.src.YoSeoPooS;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -31,7 +31,6 @@ public class Main {
             k += adding;
 
             if (k > circle.size() - 1) {
-                k
             }
 
             System.out.println(answer);

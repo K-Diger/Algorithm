@@ -1,4 +1,4 @@
-package Acmicpc1018;
+package Etc.src.Acmicpc1018;
 
 import java.io.*;
 import java.util.*;

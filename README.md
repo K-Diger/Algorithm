@@ -10,4 +10,4 @@
 [PYTHON-Backjoon](https://github.com/K-Diger/Algorithm/tree/main/Programmers(Python))
 
 ## 프로그래머스 문제풀이 (Python)
-[PYTONH-Programmers](https://github.com/K-Diger/Algorithm/tree/main/Programmers(Python))
+[PYTHON-Programmers](https://github.com/K-Diger/Algorithm/tree/main/Programmers(Python))
